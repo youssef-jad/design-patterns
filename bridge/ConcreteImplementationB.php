@@ -1,6 +1,6 @@
 <?php
 
-include_once 'Abstraction.php';
+require_once 'Abstraction.php';
 
 class ConcreteImplementationB implements Abstraction
 {
