@@ -1,11 +1,11 @@
 <?php
 
-require_once 'Implementation.php';
+namespace Bridge;
 
-class ConcreteImplementationA implements Implementation
+class ConcreteImplementationA implements \Bridge\Implementation
 {
-    public function operation(): string
+    public function operation(): void
     {
-        return "ConcreteImplementationA: Here's the result on the platform A.\n";
+        print "ConcreteImplementationA: Here's the result on the platform A.\n";
     }
 }
