@@ -1,10 +1,9 @@
 <?php
 
-require_once 'ConcreteImplementationA.php';
-require_once 'ConcreteImplementationB.php';
+require_once 'Abstraction.php';
 
-$implementationA = new ConcreteImplementationA();
-echo $implementationA->operation();
+$abstraction = new Abstraction(new ConcreteImplementationA());
+echo $abstraction->operation();
 
-$implementationB = new ConcreteImplementationB();
-echo $implementationB->operation();
+$abstraction = new Abstraction(new ConcreteImplementationB());
+echo $abstraction->operation();
