@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Abstraction.php';
+namespace Bridge;
 
-$abstraction = new Abstraction(new ConcreteImplementationA());
+$abstraction = new \Bridge\Abstraction(new \Bridge\ConcreteImplementationA());
 echo $abstraction->operation();
 
-$abstraction = new Abstraction(new ConcreteImplementationB());
+$abstraction = new \Bridge\Abstraction(new \Bridge\ConcreteImplementationB());
 echo $abstraction->operation();
