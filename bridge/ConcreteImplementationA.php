@@ -4,8 +4,8 @@ namespace Bridge;
 
 class ConcreteImplementationA implements \Bridge\Implementation
 {
-    public function operation(): void
+    public function operation(): string
     {
-        print "ConcreteImplementationA: Here's the result on the platform A.\n";
+        return "ConcreteImplementationA: Here's the result on the platform A.\n";
     }
 }
