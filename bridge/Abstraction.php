@@ -1,5 +1,7 @@
 <?php
 
+namespace Bridge;
+
 interface Implementation
 {
     public function operation(): string;
@@ -9,7 +11,7 @@ class Abstraction
 {
     protected $implementation;
 
-    public function __construct(Implementation $implementation)
+    public function __construct(\Bridge\Implementation $implementation)
     {
         $this->implementation = $implementation;
     }
