@@ -1,8 +1,8 @@
 <?php
 
-require_once 'Abstraction.php';
+require_once 'Implementation.php';
 
-class ConcreteImplementationA implements Abstraction
+class ConcreteImplementationA implements Implementation
 {
     public function operation(): string
     {
