@@ -18,6 +18,6 @@ class Abstraction
 
     public function operation(): string
     {
-        return $this->implementation->operation();
+        return htmlspecialchars($this->implementation->operation(), ENT_QUOTES, 'UTF-8');
     }
 }
