@@ -1,0 +1,9 @@
+{
+    "name": "youssef-jad/design-patterns",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bridge\\": "bridge/"
+        }
+    }
+}
